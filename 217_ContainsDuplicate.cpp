@@ -5,8 +5,8 @@
 using namespace std;
 class Solution {
 public:
-    bool containsDuplicate(std::vector<int> &nums) {
-        std::unordered_set<int> seen;
+    bool containsDuplicate(vector<int> &nums) {
+        unordered_set<int> seen;
 
         for (int num : nums) {
             if (seen.count(num) > 0) {
@@ -21,7 +21,7 @@ public:
 
 int main() {
     Solution solution;
-    std::vector<int> nums = {1, 2, 3, 4, 5, 1};
+    vector<int> nums = {1, 2, 3, 4, 5, 1};
     if (solution.containsDuplicate(nums)) {
         std::cout << "Duplicates found!" << std::endl;
     } else {

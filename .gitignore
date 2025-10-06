@@ -1,2 +1,4 @@
 # Ignore ALL .exe files in the entire project
 *.exe
+# Ignore VS Code editor settings
+.vscode/

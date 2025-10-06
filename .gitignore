@@ -1,0 +1,2 @@
+# Ignore ALL .exe files in the entire project
+*.exe

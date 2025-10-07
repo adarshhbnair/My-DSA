@@ -15,9 +15,9 @@ void rotateArray(vector<int> &arr, int d){
     if(n==0) return;
     d%=n;
     if (d==0) return;
-    reverseArray(arr,0,n-d-1);
+    reverseArray(arr,0,d-1);
     
-    reverseArray(arr, n-d, n-1);
+    reverseArray(arr, d, n-1);
 
     reverseArray(arr, 0, n-1);
 }
